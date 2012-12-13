@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>JesusGoku Quiz</title>
+	<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="underscore-min.js"></script>
+	<link type="text/css" rel="stylesheet" href="jquery.jesusgoku-quiz.css">
+	<script type="text/javascript" src="jquery.jesusgoku-quiz.js"></script>
+	<script type="text/javascript">
+	<!--
+	$(function() {
+		$('#quiz').JesusGokuQuiz({
+			questions: [
+				{
+					question: 'Cuando llevas 30 minutos buscando estacionamiento al ir a comprar regalos:'
+					, answers: [
+						{ text: 'Lo aceptas feliz, es parte de la magia de la navidad.', points: 0 }
+						, { text: 'Te comienza a tiritar un ojo y rezongas de cuánto odias ir a un mall.', points: 1 }
+						, { text: 'No aguantas más y te estacionas en el lugar de minusválidos, frente a un grifo o bloqueando la salida de una casa.', points: 2 }
+					]
+				}
+				, {
+					question: 'Cuando hacen el amigo secreto en tu oficina:'
+					, answers: [
+						{ text: 'Te tomas tu tiempo, piensas en la persona que te tocó y qué regalo sería más adecuado para ella.', points: 0 }
+						, { text: 'Si es mujer, la sección de cosméticos de la farmacia más cercana. Y si es hombre, la sección de licores del supermercado.', points: 1 }
+						, { text: 'Vas al “Todo a mil” medio hora antes de la entrega del regalo y le compras lo primer que cumpla con la cuota fijada.', points: 2 }
+					]
+				}
+				, {
+					question: 'Al prender la televisión y ver por veinteava vez las mismas películas navideñas:'
+					, answers: [
+						{ text: 'Sientes regocijo espiritual y disfrutas de Juanito Escarcha, y los clásicos de antaño.', points: 0 }
+						, { text: 'Te sientes feliz de haber comprado el decodificador pirata, sintonizas un canal premium y sonríes.', points: 2 }
+						, { text: 'Vas a la tienda de alquiler de videos y buscas la película de acción más violenta que tengan.', points: 1 }
+					]
+				}
+				, {
+					question: 'Se acerca la navidad y te das cuenta que debes comprar regalos a muchos sobrinos, primos chicos e hijos de amigos:'
+					, answers: [
+						{ text: 'Eliges detalladamente un regalo que le guste a cada uno.', points: 0 }
+						, { text: 'Vas al mall chino y compras el regalo genérico más barato al por mayor.', points: 2 }
+						, { text: 'Te endeudas para regalarle a todos tus amigos y parientes.', points: 0 }
+					]
+				}
+				, {
+					question: 'Es 24 de diciembre a las 18:00 hrs y súbitamente te das cuenta que se te olvidó un regalo:'
+					, answers: [
+						{ text: 'Dejas todo tirado y sales corriendo a comprarlo.', points: 0 }
+						, { text: 'Sacas ese par de calzoncillos/calzones con poco uso y lo pones bajo el árbol.', points: 1 }
+						, { text: 'Te haces la víctima y le dices que te abrieron el auto y te robaron el tremendo regalo que tenías.', points: 2 }
+					]
+				}
+				, {
+					question: 'Te invitan a una Cena de Navidad, y al llegar te topas con el guiso de guatitas y brócoli al aceite de bacalo en reducción de piure, de tu tía "gourmet":'
+					, answers: [
+						{ text: 'Comes con tu mejor sonrisa, alabas al cocinero y la tratas de disfrutar.', points: 0 }
+						, { text: 'Haces que te atoras y echas cada bocado en servilletas que escondes en tus bolsillos.', points: 2 }
+						, { text: 'Pides el vaso más grande posible y hacer pasar cada bocado con un sorbo de cola de mono bien cargada.', points: 1 }
+					]
+				}
+				, {
+					question: 'Cuando tu hijo de 5 años te pide el último smartphone, 4g + Wifi, de 15 pulgadas, con plan de datos por un año y llamadas ilimitadas a todas las compañías:'
+					, answers: [
+						{ text: 'Se lo regalas feliz. Harás todo por tu querubín.', points: 0 }
+						, { text: 'Le regalas una caja con un bloque de madera, y le dices que le hicieron un “cambiazo” al viejo pascuero.', points: 2 }
+						, { text: 'Buscas un smartphone chino de imitación.', points: 1 }
+					]
+				}
+				, {
+					question: 'Para saludar a tus amigos en navidad:'
+					, answers: [
+						{ text: 'Les envías una tarjeta personalizada por correo postal deseándole una feliz navidad y un próspero año nuevo.', points: 0 }
+						, { text: 'Esperas pacientemente las 00:00 hrs. y los llamas telefónicamente.', points: 0 }
+						, { text: 'Creas un grupo en Whassap o Facebook y les mandas un saludo genérico.', points: 2 }
+					]
+				}
+				// , {
+				// 	question: ''
+				// 	, answers: [
+				// 		{ text: '', points:  }
+				// 		, { text: '', points:  }
+				// 	]
+				// }
+			]
+			, width: 930
+			, height: 281
+			, padding: 20
+			, limit: 5
+			, onResult: function( points ) {
+				var msj = points < 5 ? 'Eres un niño bueno' : 'Eres un niño malo'; 
+				alert( msj );
+			}
+		});
+	});
+	//-->
+	</script>
+</head>
+<body>
+<h1>¿Eres un niño malo?</h1>
+<div id="quiz"></div>
+</body>
+</html>
